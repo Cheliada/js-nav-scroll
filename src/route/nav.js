@@ -14,11 +14,11 @@ router.get('/', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('index', {
+  res.render('nav', {
     // вказуємо назву контейнера
-    name: 'index',
+    name: 'nav',
     // вказуємо назву компонентів
-    component: ['heading'],
+    component: [],
 
     // вказуємо назву сторінки
     title: 'Назва сторінки',
@@ -26,7 +26,7 @@ router.get('/', function (req, res) {
 
     // вказуємо дані,
     data: {
-      test: new Test().test,
+      
     },
   })
   // ↑↑ сюди вводимо JSON дані
